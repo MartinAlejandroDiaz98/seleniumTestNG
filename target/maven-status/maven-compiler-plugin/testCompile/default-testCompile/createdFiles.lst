@@ -1,0 +1,6 @@
+utilities\driver\WebDriverManager.class
+utilities\driver\WebDriverManager$1.class
+utilities\driver\WebDriverProvider.class
+utilities\BasePage.class
+utilities\driver\browserEnum\Browser.class
+tests\PruebaTest.class
