@@ -201,8 +201,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.sauceDemo.LoginTest&quot;/&gt;
       &lt;class name=&quot;utilities.BaseTest&quot;/&gt;
@@ -305,32 +305,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginPerformanceUser')
 data.setCell(0, 2, 'tests.sauceDemo.LoginTest')
-data.setCell(0, 3, 5652);
+data.setCell(0, 3, 5634);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginErrorUser')
 data.setCell(1, 2, 'tests.sauceDemo.LoginTest')
-data.setCell(1, 3, 827);
+data.setCell(1, 3, 719);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginLockedUser')
+data.setCell(2, 1, 'loginProblemUser')
 data.setCell(2, 2, 'tests.sauceDemo.LoginTest')
-data.setCell(2, 3, 785);
+data.setCell(2, 3, 669);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginVisualUser')
 data.setCell(3, 2, 'tests.sauceDemo.LoginTest')
-data.setCell(3, 3, 632);
+data.setCell(3, 3, 634);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginProblemUser')
+data.setCell(4, 1, 'loginStandardUser')
 data.setCell(4, 2, 'tests.sauceDemo.LoginTest')
-data.setCell(4, 3, 626);
+data.setCell(4, 3, 625);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginStandardUser')
+data.setCell(5, 1, 'loginLockedUser')
 data.setCell(5, 2, 'tests.sauceDemo.LoginTest')
-data.setCell(5, 3, 621);
+data.setCell(5, 3, 606);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -363,71 +363,71 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginErrorUser</span>
-                <span class="method-start">2256 ms</span>
+                <span class="method-start">2041 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">masterTearDown</span>
-                <span class="method-start">3099 ms</span>
+                <span class="method-start">2774 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">masterSetUp</span>
-                <span class="method-start">3272 ms</span>
+                <span class="method-start">2938 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginLockedUser</span>
-                <span class="method-start">4459 ms</span>
+                <span class="method-start">4142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">masterTearDown</span>
-                <span class="method-start">5246 ms</span>
+                <span class="method-start">4750 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">masterSetUp</span>
-                <span class="method-start">5422 ms</span>
+                <span class="method-start">4880 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPerformanceUser</span>
-                <span class="method-start">6563 ms</span>
+                <span class="method-start">6002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">masterTearDown</span>
-                <span class="method-start">12218 ms</span>
+                <span class="method-start">11639 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">masterSetUp</span>
-                <span class="method-start">12357 ms</span>
+                <span class="method-start">11779 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginProblemUser</span>
-                <span class="method-start">13556 ms</span>
+                <span class="method-start">12939 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">masterTearDown</span>
-                <span class="method-start">14184 ms</span>
+                <span class="method-start">13611 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">masterSetUp</span>
-                <span class="method-start">14327 ms</span>
+                <span class="method-start">13759 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginStandardUser</span>
-                <span class="method-start">15453 ms</span>
+                <span class="method-start">14917 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">masterTearDown</span>
-                <span class="method-start">16076 ms</span>
+                <span class="method-start">15544 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">masterSetUp</span>
-                <span class="method-start">16210 ms</span>
+                <span class="method-start">15671 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginVisualUser</span>
-                <span class="method-start">17336 ms</span>
+                <span class="method-start">16796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">masterTearDown</span>
-                <span class="method-start">17970 ms</span>
+                <span class="method-start">17433 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
