@@ -2,7 +2,10 @@ package utilities;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utilities.driver.WebDriverProvider;
@@ -27,6 +30,27 @@ public class BasePage {
     public void navigateTo(String url){
         getDriver().get(url);
     }
+    
+    // Metodo de espera objeto clickable
+    public WebElement waitClickable(By locator){
+        return getWait().until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    // Metodo de espera objeta visible
+    public WebElement waitVisible(By locator){
+        return getWait().until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    // Click elemento
+    public void clickElement(By locator){
+        waitClickable(locator).click();
+    }
+
+    // Escribo texto
+    public void sendsKeys(By locator, String text){
+        waitClickable(locator).sendKeys(text);
+    }
+
 
     
 }

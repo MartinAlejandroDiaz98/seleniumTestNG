@@ -1,6 +1,9 @@
 utilities\driver\WebDriverManager.class
+utilities\driver\browserEnum\Browser.class
+pages\sauceDemo\LoginPage.class
+pages\sauceDemo\InventoryPage.class
+tests\sauceDemo\LoginTest.class
 utilities\driver\WebDriverManager$1.class
+utilities\BaseTest.class
 utilities\driver\WebDriverProvider.class
 utilities\BasePage.class
-utilities\driver\browserEnum\Browser.class
-tests\PruebaTest.class
