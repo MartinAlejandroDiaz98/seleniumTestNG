@@ -1,0 +1,56 @@
+name: Selenium TestNG CI
+
+on:
+  push:
+    branches:
+      - main       # Ejecuta las pruebas cuando se haga un push a la rama main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  selenium-tests:
+    runs-on: ubuntu-latest  # Usa el runner de GitHub (puede ser Windows o MacOS también)
+
+    steps:
+      # 1. Clona el repositorio
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      # 2. Configura Java
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'     # Versión de Java
+          distribution: 'temurin'  # Distribución de Java
+
+      # 3. Configura Maven
+      - name: Configurar Maven
+        run: mvn --version
+
+      # 4. Configura Maven
+      - name: Cache Maven dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      # 5. Instala dependencias y ejecuta las pruebas
+      - name: Ejecutar pruebas Selenium TestNG
+        run: mvn clean test
+              # Paso 4: Instalar Allure
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
+
+    # Paso 6: Generar el reporte Allure
+      - name: Generate Allure Report
+        run: mvn allure:report
+
+    # Paso 7: Publicar el reporte Allure
+      - name: Upload Allure Report as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+               name: allure-report
+               path: target/site/allure-maven-plugin
