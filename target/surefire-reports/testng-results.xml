@@ -2,96 +2,96 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-17T11:29:16 ART" name="Surefire suite" finished-at="2024-12-17T11:29:34 ART" duration-ms="18092">
+  <suite started-at="2024-12-17T16:13:22 ART" name="Surefire suite" finished-at="2024-12-17T16:13:40 ART" duration-ms="18165">
     <groups>
       <group name="Sauce Demo">
-        <method signature="LoginTest.loginErrorUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginErrorUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginLockedUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginLockedUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginPerformanceUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginPerformanceUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginProblemUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginProblemUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginStandardUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginStandardUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginVisualUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginVisualUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginErrorUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginErrorUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginLockedUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginLockedUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginPerformanceUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginPerformanceUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginProblemUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginProblemUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginStandardUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginStandardUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginVisualUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginVisualUser" class="tests.sauceDemo.LoginTest"/>
       </group> <!-- Sauce Demo -->
       <group name="Regresion">
-        <method signature="LoginTest.loginErrorUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginErrorUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginLockedUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginLockedUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginPerformanceUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginPerformanceUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginProblemUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginProblemUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginStandardUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginStandardUser" class="tests.sauceDemo.LoginTest"/>
-        <method signature="LoginTest.loginVisualUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" name="loginVisualUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginErrorUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginErrorUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginLockedUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginLockedUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginPerformanceUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginPerformanceUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginProblemUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginProblemUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginStandardUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginStandardUser" class="tests.sauceDemo.LoginTest"/>
+        <method signature="LoginTest.loginVisualUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" name="loginVisualUser" class="tests.sauceDemo.LoginTest"/>
       </group> <!-- Regresion -->
     </groups>
-    <test started-at="2024-12-17T11:29:16 ART" name="Surefire test" finished-at="2024-12-17T11:29:34 ART" duration-ms="18092">
+    <test started-at="2024-12-17T16:13:22 ART" name="Surefire test" finished-at="2024-12-17T16:13:40 ART" duration-ms="18165">
       <class name="tests.sauceDemo.LoginTest">
-        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:16 ART" name="masterSetUp" finished-at="2024-12-17T11:29:18 ART" duration-ms="2048" status="PASS">
+        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:22 ART" name="masterSetUp" finished-at="2024-12-17T16:13:24 ART" duration-ms="2150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterSetUp -->
-        <test-method signature="loginErrorUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:18 ART" name="loginErrorUser" finished-at="2024-12-17T11:29:19 ART" duration-ms="729" status="PASS">
+        <test-method signature="loginErrorUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:24 ART" name="loginErrorUser" finished-at="2024-12-17T16:13:25 ART" duration-ms="827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorUser -->
-        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:19 ART" name="masterTearDown" finished-at="2024-12-17T11:29:19 ART" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:25 ART" name="masterTearDown" finished-at="2024-12-17T16:13:25 ART" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterTearDown -->
-        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:19 ART" name="masterSetUp" finished-at="2024-12-17T11:29:20 ART" duration-ms="1171" status="PASS">
+        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:25 ART" name="masterSetUp" finished-at="2024-12-17T16:13:26 ART" duration-ms="1186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterSetUp -->
-        <test-method signature="loginLockedUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:20 ART" name="loginLockedUser" finished-at="2024-12-17T11:29:21 ART" duration-ms="645" status="PASS">
+        <test-method signature="loginLockedUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:26 ART" name="loginLockedUser" finished-at="2024-12-17T16:13:27 ART" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLockedUser -->
-        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:21 ART" name="masterTearDown" finished-at="2024-12-17T11:29:21 ART" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:27 ART" name="masterTearDown" finished-at="2024-12-17T16:13:27 ART" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterTearDown -->
-        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:21 ART" name="masterSetUp" finished-at="2024-12-17T11:29:23 ART" duration-ms="1250" status="PASS">
+        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:27 ART" name="masterSetUp" finished-at="2024-12-17T16:13:29 ART" duration-ms="1140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterSetUp -->
-        <test-method signature="loginPerformanceUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:23 ART" name="loginPerformanceUser" finished-at="2024-12-17T11:29:28 ART" duration-ms="5677" status="PASS">
+        <test-method signature="loginPerformanceUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:29 ART" name="loginPerformanceUser" finished-at="2024-12-17T16:13:34 ART" duration-ms="5652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPerformanceUser -->
-        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:28 ART" name="masterTearDown" finished-at="2024-12-17T11:29:28 ART" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:34 ART" name="masterTearDown" finished-at="2024-12-17T16:13:34 ART" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterTearDown -->
-        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:28 ART" name="masterSetUp" finished-at="2024-12-17T11:29:30 ART" duration-ms="1160" status="PASS">
+        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:34 ART" name="masterSetUp" finished-at="2024-12-17T16:13:36 ART" duration-ms="1198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterSetUp -->
-        <test-method signature="loginProblemUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:30 ART" name="loginProblemUser" finished-at="2024-12-17T11:29:30 ART" duration-ms="654" status="PASS">
+        <test-method signature="loginProblemUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:36 ART" name="loginProblemUser" finished-at="2024-12-17T16:13:36 ART" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginProblemUser -->
-        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:30 ART" name="masterTearDown" finished-at="2024-12-17T11:29:30 ART" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:36 ART" name="masterTearDown" finished-at="2024-12-17T16:13:36 ART" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterTearDown -->
-        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:30 ART" name="masterSetUp" finished-at="2024-12-17T11:29:31 ART" duration-ms="1125" status="PASS">
+        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:36 ART" name="masterSetUp" finished-at="2024-12-17T16:13:37 ART" duration-ms="1124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterSetUp -->
-        <test-method signature="loginStandardUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:31 ART" name="loginStandardUser" finished-at="2024-12-17T11:29:32 ART" duration-ms="634" status="PASS">
+        <test-method signature="loginStandardUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:37 ART" name="loginStandardUser" finished-at="2024-12-17T16:13:38 ART" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginStandardUser -->
-        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:32 ART" name="masterTearDown" finished-at="2024-12-17T11:29:32 ART" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:38 ART" name="masterTearDown" finished-at="2024-12-17T16:13:38 ART" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterTearDown -->
-        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:32 ART" name="masterSetUp" finished-at="2024-12-17T11:29:33 ART" duration-ms="1140" status="PASS">
+        <test-method is-config="true" signature="masterSetUp()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:38 ART" name="masterSetUp" finished-at="2024-12-17T16:13:39 ART" duration-ms="1124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterSetUp -->
-        <test-method signature="loginVisualUser()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:33 ART" name="loginVisualUser" finished-at="2024-12-17T11:29:34 ART" duration-ms="640" status="PASS">
+        <test-method signature="loginVisualUser()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:39 ART" name="loginVisualUser" finished-at="2024-12-17T16:13:40 ART" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginVisualUser -->
-        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@65004ff6]" started-at="2024-12-17T11:29:34 ART" name="masterTearDown" finished-at="2024-12-17T11:29:34 ART" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="masterTearDown()[pri:0, instance:tests.sauceDemo.LoginTest@c446b14]" started-at="2024-12-17T16:13:40 ART" name="masterTearDown" finished-at="2024-12-17T16:13:40 ART" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterTearDown -->

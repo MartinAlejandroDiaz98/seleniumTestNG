@@ -27,20 +27,10 @@ jobs:
       # 3. Configura Maven
       - name: Configurar Maven
         run: mvn --version
-
-      # 4. Configura Maven
-      - name: Cache Maven dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
-
       # 5. Instala dependencias y ejecuta las pruebas
       - name: Ejecutar pruebas Selenium TestNG
         run: mvn clean test
-              # Paso 4: Instalar Allure
+      # Paso 4: Instalar Allure
       - name: Install Allure CLI
         run: npm install -g allure-commandline
 
