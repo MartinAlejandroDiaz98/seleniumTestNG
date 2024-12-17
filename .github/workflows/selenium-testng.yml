@@ -21,7 +21,7 @@ jobs:
       - name: Configurar Java
         uses: actions/setup-java@v4
         with:
-          java-version: '17'     # Versión de Java
+          java-version: '21'     # Versión de Java
           distribution: 'temurin'  # Distribución de Java
 
       # 3. Configura Maven
