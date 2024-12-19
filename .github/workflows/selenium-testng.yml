@@ -27,6 +27,14 @@ jobs:
       # 3. Configura Maven
       - name: Configurar Maven
         run: mvn --version
+              # Paso 3: Configurar caché para dependencias de Maven
+      - name: Cache Maven dependencies
+        uses: actions/cache@v3
+        with:
+            path: ~/.m2
+            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+            restore-keys: |
+                    ${{ runner.os }}-maven-
       # 5. Instala dependencias y ejecuta las pruebas
       - name: Ejecutar pruebas Selenium TestNG
         run: mvn clean test
