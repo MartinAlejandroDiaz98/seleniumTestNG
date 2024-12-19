@@ -48,7 +48,7 @@ jobs:
 
       # Paso 5: Generar el reporte Allure
       - name: Generate Allure Report
-        run: allure generate
+        run: allure generate --clean
 
       # Paso 6: Publicar el reporte Allure
       - name: Upload Allure Report as an artifact
