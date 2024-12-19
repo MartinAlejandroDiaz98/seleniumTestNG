@@ -4,9 +4,13 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 import utilities.driver.browserEnum.Browser;
 
@@ -35,14 +39,68 @@ public class WebDriverManager {
             browserProperty = "CHROME";
         }
         Browser browser = Browser.valueOf(browserProperty.toUpperCase());
-
+        
     //    Instancio el webdriver segun el valor del BROWSER.
+            // Configuración en modo headless
+                            ChromeOptions options = new ChromeOptions();
+                            options.addArguments("--headless");
+                            options.addArguments("--disable-gpu");
+                            options.addArguments("--no-sandbox");
+                            options.addArguments("--disable-dev-shm-usage");
+                            EdgeOptions optionsEdge = new EdgeOptions();
+                            optionsEdge.addArguments("--headless");
+                            optionsEdge.addArguments("--disable-gpu");
+                            optionsEdge.addArguments("--no-sandbox");
+                            optionsEdge.addArguments("--disable-dev-shm-usage");
+                            FirefoxOptions optionsFirefox = new FirefoxOptions();
+                                            optionsFirefox.addArguments("--headless");
+                                            optionsFirefox.addArguments("--disable-gpu");
+                                            optionsFirefox.addArguments("--no-sandbox");
+                                            optionsFirefox.addArguments("--disable-dev-shm-usage");
+                                //             SafariOptions optionsSafari = new SafariOptions();
+                                // optionsSafari.addArguments
+                                // optionsSafari.addArguments("--disable-gpu");
+                                // optionsSafari.addArguments("--no-sandbox");
+                                // optionsSafari.addArguments("--disable-dev-shm-usage");
             // inicializando driver..
-            WebDriver driver = switch (browser){
-                case CHROME ->  new ChromeDriver();
-                case EDGE -> new EdgeDriver();
-                case FIREFOX -> new FirefoxDriver();
+            WebDriver driver = 
+            switch (browser){
+                case CHROME -> new ChromeDriver(options);
+                // {// Configuración en modo headless
+                //             ChromeOptions options = new ChromeOptions();
+                //             options.addArguments("--headless");
+                //             options.addArguments("--disable-gpu");
+                //             options.addArguments("--no-sandbox");
+                //             options.addArguments("--disable-dev-shm-usage");
+                //             new ChromeDriver(options);
+                // }
+                case EDGE ->new EdgeDriver(optionsEdge);
+                // {
+                //             EdgeOptions optionsEdge = new EdgeOptions();
+                //             optionsEdge.addArguments("--headless");
+                //             optionsEdge.addArguments("--disable-gpu");
+                //             optionsEdge.addArguments("--no-sandbox");
+                //             optionsEdge.addArguments("--disable-dev-shm-usage");
+                //             new EdgeDriver(optionsEdge);
+                //             }
+                 case FIREFOX ->  new FirefoxDriver(optionsFirefox);
+                // {
+                //                 FirefoxOptions optionsFirefox = new FirefoxOptions();
+                //                 optionsFirefox.addArguments("--headless");
+                //                 optionsFirefox.addArguments("--disable-gpu");
+                //                 optionsFirefox.addArguments("--no-sandbox");
+                //                 optionsFirefox.addArguments("--disable-dev-shm-usage");
+                //                 new FirefoxDriver(optionsFirefox);
+                //                 }
                 case SAFARI -> new SafariDriver();
+                // {
+                    // SafariOptions optionsSafari = new SafariOptions();
+                    // optionsSafari.addArguments("--headless");
+                    // optionsSafari.addArguments("--disable-gpu");
+                    // optionsSafari.addArguments("--no-sandbox");
+                    // optionsSafari.addArguments("--disable-dev-shm-usage");
+                    //         new SafariDriver(optionsSafari);
+                            // }
             };
     //        Luego de instanciar e inicializar driver maximizo browser
             driver.manage().window().maximize();
