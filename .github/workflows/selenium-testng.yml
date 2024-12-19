@@ -1,52 +1,56 @@
 name: Selenium TestNG CI
 
+# Disparadores del flujo de trabajo
 on:
+  # En cada pusheo de codigo
   push:
     branches:
-      - main       # Ejecuta las pruebas cuando se haga un push a la rama main
+      - main
+  # En cada pull request de codigo
   pull_request:
     branches:
       - main
 
+# Definir los jobs
 jobs:
-  selenium-tests:
-    runs-on: ubuntu-latest  # Usa el runner de GitHub (puede ser Windows o MacOS también)
+  build:
+    # Se correra en una maquina virtual ubuntu comun
+    runs-on: ubuntu-latest
 
     steps:
-      # 1. Clona el repositorio
-      - name: Checkout del repositorio
-        uses: actions/checkout@v4
+      # Paso 1: Clonar el repositorio pasando URL
+      - name: https://github.com/panaderodiaz98/restAssured.git
+        uses: actions/checkout@v3
 
-      # 2. Configura Java
-      - name: Configurar Java
-        uses: actions/setup-java@v4
+      # Paso 2: Configurar JDK
+      - name: Set up JDK 21
+        uses: actions/setup-java@v3
         with:
-          java-version: '21'     # Versión de Java
-          distribution: 'temurin'  # Distribución de Java
+          java-version: 21
+          distribution: 'temurin'
 
-      # 3. Configura Maven
-      - name: Configurar Maven
-        run: mvn --version
-              # Paso 3: Configurar caché para dependencias de Maven
+      # Paso 3: Configurar caché para dependencias de Maven
       - name: Cache Maven dependencies
         uses: actions/cache@v3
         with:
-            path: ~/.m2
-            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-            restore-keys: |
-                    ${{ runner.os }}-maven-
-      # 5. Instala dependencias y ejecuta las pruebas
-      - name: Ejecutar pruebas Selenium TestNG
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      # Paso 4: Ejecutar pruebas y generar resultados de Allure
+      - name: Run tests with Maven
         run: mvn clean test
+        
       # Paso 4: Instalar Allure
       - name: Install Allure CLI
         run: npm install -g allure-commandline
 
-    # Paso 6: Generar el reporte Allure
+      # Paso 5: Generar el reporte Allure
       - name: Generate Allure Report
         run: allure generate
 
-    # Paso 7: Publicar el reporte Allure
+      # Paso 6: Publicar el reporte Allure
       - name: Upload Allure Report as an artifact
         uses: actions/upload-artifact@v4
         with:
