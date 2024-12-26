@@ -43,10 +43,10 @@ public class WebDriverManager {
         //    Instancio el webdriver segun el valor del BROWSER.
             // Configuración en modo headless
             ChromeOptions options = new ChromeOptions();
-            // options.addArguments("--headless");
-            // options.addArguments("--disable-gpu");
-            // options.addArguments("--no-sandbox");
-            // options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--headless");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
             EdgeOptions optionsEdge = new EdgeOptions();
             optionsEdge.addArguments("--headless");
             optionsEdge.addArguments("--disable-gpu");
