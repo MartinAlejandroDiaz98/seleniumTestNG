@@ -78,5 +78,13 @@
         <artifactId>selenium-java</artifactId>
         <version>4.27.0</version>
     </dependency>
+    <!-- Dependencia LOOMBOK para generar getters setters etc automaticamente, ahorro de codigo -->
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.36</version>
+        <scope>provided</scope>
+    </dependency>
   </dependencies>
 </project>
