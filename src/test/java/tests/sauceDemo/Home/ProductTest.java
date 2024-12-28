@@ -12,7 +12,7 @@ public class ProductTest extends BaseTest{
     LoginPage loginPage = new LoginPage();
     ProductsPage productsPage = new ProductsPage();
     CartPage cartPage = new CartPage();
-    @Test
+    @Test(groups = {regresion, sauceDemo})
     public void carritoValidacion(){
         String productoElegido = "Sauce Labs Backpack";
         // Login
@@ -28,7 +28,7 @@ public class ProductTest extends BaseTest{
         Assert.assertEquals(itemName, productoElegido);
     }
 
-    @Test
+    @Test(groups = {regresion, sauceDemo})
     public void filterOrder(){
         loginPage.login(loginPage.getStandardUser(), loginPage.getPassLogin(), loginPage.getUrl());
         waitVisible(productsPage.getInventario());
