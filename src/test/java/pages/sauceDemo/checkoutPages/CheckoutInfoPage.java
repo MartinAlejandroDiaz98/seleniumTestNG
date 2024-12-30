@@ -30,4 +30,12 @@ public class CheckoutInfoPage extends BasePage {
         String mensajeError = getText(messageError);
         Assert.assertEquals(mensajeError, mensajeEsperado, "Mensaje erroneo, el mensaje actual obtenido es: " + mensajeError);
     }
+
+    //Checkout info ok
+    public void typeInfoCheckout(String firstName, String lastName, String postalCode){
+        sendsKeys(getFirstName(), firstName);
+        sendsKeys(getLastName(), lastName);
+        sendsKeys(getPostalCode(), postalCode);
+        clickElement(btnContinue); 
+    }
 }

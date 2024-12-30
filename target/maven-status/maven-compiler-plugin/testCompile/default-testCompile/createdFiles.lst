@@ -1,13 +1,16 @@
 tests\sauceDemo\CheckoutInfoTest.class
 pages\sauceDemo\ProductsPage.class
+pages\sauceDemo\checkoutPages\CheckoutFinish.class
 utilities\driver\browserEnum\Browser.class
 utilities\BaseTest.class
 utilities\driver\WebDriverProvider.class
 utilities\BasePage.class
 tests\sauceDemo\Home\ProductTest.class
-pages\sauceDemo\CheckoutInfoPage.class
 tests\sauceDemo\Login\LoginTest.class
 utilities\driver\WebDriverManager.class
+tests\sauceDemo\CheckoutOverviewTest.class
+pages\sauceDemo\checkoutPages\CheckoutInfoPage.class
 pages\sauceDemo\LoginPage.class
+pages\sauceDemo\checkoutPages\CheckoutOverviewPage.class
 utilities\driver\WebDriverManager$1.class
 pages\sauceDemo\CartPage.class
