@@ -43,20 +43,23 @@ public class WebDriverManager {
         //    Instancio el webdriver segun el valor del BROWSER.
             // Configuración en modo headless
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            options.addArguments("--disable-gpu");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
             EdgeOptions optionsEdge = new EdgeOptions();
-            optionsEdge.addArguments("--headless");
-            optionsEdge.addArguments("--disable-gpu");
-            optionsEdge.addArguments("--no-sandbox");
-            optionsEdge.addArguments("--disable-dev-shm-usage");
             FirefoxOptions optionsFirefox = new FirefoxOptions();
-            optionsFirefox.addArguments("--headless");
-            optionsFirefox.addArguments("--disable-gpu");
-            optionsFirefox.addArguments("--no-sandbox");
-            optionsFirefox.addArguments("--disable-dev-shm-usage");
+            // Options chrome
+            // options.addArguments("--headless");
+            // options.addArguments("--disable-gpu");
+            // options.addArguments("--no-sandbox");
+            // options.addArguments("--disable-dev-shm-usage");
+            // // Options edge
+            // optionsEdge.addArguments("--headless");
+            // optionsEdge.addArguments("--disable-gpu");
+            // optionsEdge.addArguments("--no-sandbox");
+            // optionsEdge.addArguments("--disable-dev-shm-usage");
+            // // Options firefox
+            // optionsFirefox.addArguments("--headless");
+            // optionsFirefox.addArguments("--disable-gpu");
+            // optionsFirefox.addArguments("--no-sandbox");
+            // optionsFirefox.addArguments("--disable-dev-shm-usage");
                         
             // inicializando driver..
             WebDriver driver = 

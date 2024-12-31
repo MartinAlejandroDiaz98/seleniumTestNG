@@ -1,0 +1,10 @@
+<suite name="Suite de Pruebas Regresion">
+    <test name="Regresion Test">
+        <groups>
+            <run>
+                <include name="Regresion"/>
+                <include name="Sauce Demo"/>
+            </run>
+        </groups>
+    </test>
+</suite>
